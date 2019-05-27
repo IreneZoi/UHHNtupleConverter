@@ -502,7 +502,7 @@ UHHNtupleConverterModule::UHHNtupleConverterModule(Context & ctx){
     else if(year == Year::is2018 ){
       jec_tag = "Autumn18";
       jec_ver = "8";
-      JER_sf  = JERSmearing::SF_13TeV_Autumn18_V4;
+      JER_sf  = JERSmearing::SF_13TeV_Autumn18_RunABCD_V4;
       ResolutionFileName = "2018/Autumn18_V4_MC_PtResolution_AK4PFPuppi.txt";
     }
 
