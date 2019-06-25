@@ -9,6 +9,7 @@
 using namespace uhh2examples;
 using namespace uhh2;
 using namespace std;
+bool PRINT = false;
 
 DijetSelection::DijetSelection(float deta_max_, float mjj_min_): deta_max(deta_max_), mjj_min(mjj_min_){}
     
@@ -28,11 +29,11 @@ MuonVeto::MuonVeto(float deltaR_min_, const boost::optional<MuonId> & muid_): de
 bool MuonVeto::passes(const Event & event){
   assert(event.topjets); // if this fails, it probably means jets are not read in                                                                                                                                                                                             
   assert(event.muons); // if this fails, it probably means jets are not read in                                                                                                                                                                                               
-  if(muid){
-    for(const auto & muons : *event.muons){
+ 
+  for(const auto & muons : *event.muons){
+    if(muid){ 
       for(const auto & topjets : *event.topjets){
-	if(deltaR(topjets,muons)  < deltaR_min) return false;
-	else return true;
+	if(deltaR(topjets,muons)  < deltaR_min && muid) return false;
       }
     }
   }
@@ -45,11 +46,11 @@ ElectronVeto::ElectronVeto(float deltaR_min_, const boost::optional<ElectronId> 
 bool ElectronVeto::passes(const Event & event){
   assert(event.topjets); // if this fails, it probably means jets are not read in                                                                                                                                                                                             
   assert(event.electrons); // if this fails, it probably means jets are not read in                                                                                                                                                                                           
-  if(eleid){
-    for(const auto & topjets : *event.topjets){
+
+  for(const auto & topjets : *event.topjets){
+    if(eleid){
       for(const auto & electrons : *event.electrons){
 	if(deltaR(topjets,electrons)  < deltaR_min) return false;
-	else return true;
       }
     }
   }
@@ -90,16 +91,22 @@ bool GenHbbEventSelection::passes(const Event & event, Jet & jet){
 GenVqqEventSelection::GenVqqEventSelection(){}
     
 bool GenVqqEventSelection::passes(const Event & event, Jet & jet){
+  assert(event.genparticles); // if this fails, it probably means genparticles are not read in    
   std::vector<GenParticle> genQuarks;
   bool vectorboson = false;
+  if(PRINT) cout << "GenVqqEventSelection" << endl;
   for(auto genp:*event.genparticles){
+    if(PRINT) cout << "loop on gen particles" << endl;
     if(abs(genp.pdgId())==24 || abs(genp.pdgId())==23){
+      if(PRINT) cout << "I have a vector boson!" << endl;
        vectorboson = true;
        int dau1 = abs(event.genparticles->at(genp.daughter1()).pdgId());
+       if(PRINT) cout << "I have one daughter" << endl;
        int dau2 = abs(event.genparticles->at(genp.daughter2()).pdgId());
+       if(PRINT) cout << "I have 2 daughters" << endl;
        if( (dau1 >=1 && dau1 <=6) && (dau2 >=1 && dau2 <=6) ){
-        genQuarks.push_back( event.genparticles->at(genp.daughter1()) ); 
-        genQuarks.push_back( event.genparticles->at(genp.daughter2()) );
+	 genQuarks.push_back( event.genparticles->at(genp.daughter1()) ); 
+	 genQuarks.push_back( event.genparticles->at(genp.daughter2()) );
        }
     }
     if(genQuarks.size()>1) break;
