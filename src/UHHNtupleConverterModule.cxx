@@ -55,7 +55,8 @@ private:
 
     std::string jec_tag, jec_ver, jec_jet_coll_AK8chs, jec_jet_coll_AK4puppi,Vcorr;
     bool isVjet;
-    JERSmearing::SFtype1 JER_sf;
+    JERSmearing::SFtype1 JER_sf = {};
+    std::string sfFilename = "";
     TString ResolutionFileName;   
   
     std::unique_ptr<JetCorrector> jet_corrector;
@@ -586,7 +587,7 @@ UHHNtupleConverterModule::UHHNtupleConverterModule(Context & ctx){
     else if(year == Year::is2018 ){
       jec_tag = "Autumn18";
       jec_ver = "19";
-      JER_sf  = JERSmearing::SF_13TeV_Autumn18_V7;
+      sfFilename = "common/data/2018/Autumn18_V7_MC_SF_AK4PFPuppi.txt";
       ResolutionFileName = "2018/Autumn18_V7_MC_PtResolution_AK4PFPuppi.txt";
     }
     
@@ -597,8 +598,14 @@ UHHNtupleConverterModule::UHHNtupleConverterModule(Context & ctx){
       std::cout << "Smearing: " << jec_jet_coll_AK4puppi << " with "<< ResolutionFileName << std::endl;     
       jet_corrector.reset(new JetCorrector(ctx, JERFiles::JECFilesMC(jec_tag, jec_ver, jec_jet_coll_AK8chs)));
       jet_corrector_puppi.reset(new GenericJetCorrector(ctx, JERFiles::JECFilesMC(jec_tag, jec_ver, jec_jet_coll_AK4puppi),"jetsAk4Puppi"));
-      jet_EResSmearer.reset(new JetResolutionSmearer(ctx));                                                                                                                                                                                                           
-      jetpuppi_EResSmearer.reset(new GenericJetResolutionSmearer(ctx,"jetsAk4Puppi","slimmedGenJets",JER_sf,ResolutionFileName));
+      jet_EResSmearer.reset(new JetResolutionSmearer(ctx));
+      if (sfFilename != "") {                                                                                                                                                                                                           
+	jetpuppi_EResSmearer.reset(new GenericJetResolutionSmearer(ctx,"jetsAk4Puppi","slimmedGenJets",sfFilename,ResolutionFileName));
+      } else if (JER_sf.size() > 0) {
+	jetpuppi_EResSmearer.reset(new GenericJetResolutionSmearer(ctx,"jetsAk4Puppi","slimmedGenJets",JER_sf,ResolutionFileName));
+      } else {
+	throw runtime_error("No valid JER SF either as text file nor JERSmearing::SFtype1");
+      }
     }
     else{
       std::cout << "USING " << year_str_map.at(year) << " DATA JEC: "<< jec_tag << " V" << jec_ver << std::endl;
