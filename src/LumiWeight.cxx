@@ -18,8 +18,13 @@ double LumiWeight::getLumiWeight( TString sample ){
   if( sample.Contains("BulkGrav") or sample.Contains("Qstar") or sample.Contains("Wprime") or sample.Contains("Zprime") or sample.Contains("Radion")) return 1.0;
 
   if( sample.Contains( "WW_"      ) ) return 118.7; //NNLO, https://twiki.cern.ch/twiki/bin/viewauth/CMS/StandardModelCrossSectionsat13TeV
+  if( sample.Contains( "WWTo4Q"      ) ) return 53.94; //NNLO, https://twiki.cern.ch/twiki/bin/viewauth/CMS/StandardModelCrossSectionsat13TeV
   if( sample.Contains( "WZ_"      ) ) return 47.13; //NLO, https://twiki.cern.ch/twiki/bin/viewauth/CMS/SummaryTable1G25ns#Diboson 
   if( sample.Contains( "ZZ_"      ) ) return 16.5; //NLO, https://twiki.cern.ch/twiki/bin/viewauth/CMS/SummaryTable1G25ns#Diboson
+  if( sample.Contains( "ZZTo4Q"      ) ) return 8.06; //NLO, https://twiki.cern.ch/twiki/bin/viewauth/CMS/SummaryTable1G25ns#Diboson
+  if( sample.Contains( "WminusH_HToBB_WToQQ_M125"      ) ) return 0.533*0.5824*0.6741;
+  if( sample.Contains( "WplusH_HToBB_WToQQ_M125"      ) ) return 0.84*0.5824*0.6741;
+  if( sample.Contains( "ZH_HToBB_ZToQQ_M125"      ) ) return 0.8839*0.5824*0.69911;
   if( sample.Contains( "TT_Mtt-700to1000"      ) ) return 76.605;
   if( sample.Contains( "TT_Mtt-1000toInf"      ) ) return 20.578;
   if( sample.Contains( "TTToHadronic"          ) ) return 380.13;

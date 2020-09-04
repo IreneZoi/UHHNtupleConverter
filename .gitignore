@@ -6,7 +6,7 @@
 pydump*.py
 core/python/__init__.py
 *.pyc
-*.root
+#*.root
 *~
 *.local
 *.pdf
@@ -20,4 +20,4 @@ JECDatabase/*
 pydump.py
 Makefile.local
 config/UHHNtupleConverterLocal.xml
-!NLOweights/*.root
+NLOweights/*.root

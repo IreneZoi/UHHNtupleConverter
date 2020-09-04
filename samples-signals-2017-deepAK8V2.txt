@@ -1,0 +1,87 @@
+###################################
+#BulkGWW
+###################################
+BulkGravToWW_narrow_M-500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-500.xml
+BulkGravToWW_narrow_M-600_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-600.xml
+BulkGravToWW_narrow_M-800_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-800.xml
+#BulkGravToWW_narrow_M-1000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-1000.xml ***MISSING***
+BulkGravToWW_narrow_M-1200_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-1200.xml
+#BulkGravToWW_narrow_M-1400_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-1400.xml ***MISSING***
+BulkGravToWW_narrow_M-1600_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-1600.xml
+BulkGravToWW_narrow_M-1800_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-1800.xml
+BulkGravToWW_narrow_M-2000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-2000.xml
+BulkGravToWW_narrow_M-2500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-2500.xml
+BulkGravToWW_narrow_M-3000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-3000.xml
+BulkGravToWW_narrow_M-3500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-3500.xml
+BulkGravToWW_narrow_M-4000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-4000.xml
+BulkGravToWW_narrow_M-4500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGWW/BulkGravToWW_narrow_M-4500.xml
+###################################
+#BulkGZZ
+###################################
+BulkGravToZZToZhadZhad_narrow_M-500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-500.xml
+BulkGravToZZToZhadZhad_narrow_M-600_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-600.xml
+BulkGravToZZToZhadZhad_narrow_M-800_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-800.xml
+BulkGravToZZToZhadZhad_narrow_M-1000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-1000.xml
+BulkGravToZZToZhadZhad_narrow_M-1200_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-1200.xml
+BulkGravToZZToZhadZhad_narrow_M-1400_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-1400.xml
+BulkGravToZZToZhadZhad_narrow_M-1600_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-1600.xml
+BulkGravToZZToZhadZhad_narrow_M-1800_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-1800.xml
+BulkGravToZZToZhadZhad_narrow_M-2000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-2000.xml
+BulkGravToZZToZhadZhad_narrow_M-2500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-2500.xml
+BulkGravToZZToZhadZhad_narrow_M-3000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-3000.xml
+BulkGravToZZToZhadZhad_narrow_M-3500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-3500.xml
+BulkGravToZZToZhadZhad_narrow_M-4000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-4000.xml
+BulkGravToZZToZhadZhad_narrow_M-4500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-4500.xml
+BulkGravToZZToZhadZhad_narrow_M-5000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-5000.xml
+BulkGravToZZToZhadZhad_narrow_M-5500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-5500.xml
+BulkGravToZZToZhadZhad_narrow_M-6000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-6000.xml
+BulkGravToZZToZhadZhad_narrow_M-6500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-6500.xml
+BulkGravToZZToZhadZhad_narrow_M-7000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-7000.xml
+BulkGravToZZToZhadZhad_narrow_M-7500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-7500.xml
+BulkGravToZZToZhadZhad_narrow_M-8000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/BulkGZZ/BulkGravToZZ_M-8000.xml
+###################################
+#WprimeWH
+###################################
+WprimeToWhToWhadhbb_narrow_M-600_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-600.xml
+WprimeToWhToWhadhbb_narrow_M-800_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-800.xml
+WprimeToWhToWhadhbb_narrow_M-1000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-1000.xml
+WprimeToWhToWhadhbb_narrow_M-1200_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-1200.xml
+WprimeToWhToWhadhbb_narrow_M-1400_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-1400.xml
+WprimeToWhToWhadhbb_narrow_M-1600_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-1600.xml
+WprimeToWhToWhadhbb_narrow_M-1800_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-1800.xml
+WprimeToWhToWhadhbb_narrow_M-2000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-2000.xml
+WprimeToWhToWhadhbb_narrow_M-2500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-2500.xml
+WprimeToWhToWhadhbb_narrow_M-3000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-3000.xml
+WprimeToWhToWhadhbb_narrow_M-3500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-3500.xml
+WprimeToWhToWhadhbb_narrow_M-4000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-4000.xml
+#WprimeToWhToWhadhbb_narrow_M-4500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-4500.xml #TO BE RERUN ##
+WprimeToWhToWhadhbb_narrow_M-5000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-5000.xml
+WprimeToWhToWhadhbb_narrow_M-5500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-5500.xml
+WprimeToWhToWhadhbb_narrow_M-6000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-6000.xml
+#WprimeToWhToWhadhbb_narrow_M-6500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-6500.xml #TO BE RERUN ##
+WprimeToWhToWhadhbb_narrow_M-7000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-7000.xml
+#WprimeToWhToWhadhbb_narrow_M-7500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-7500.xml #TO BE RERUN ##
+WprimeToWhToWhadhbb_narrow_M-8000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/WprimeWH/WprimeToWhToWhadhbb_M-8000.xml
+###################################
+#ZprimeZH
+###################################
+ZprimeToZhToZhadhbb_narrow_M-600_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-600.xml
+ZprimeToZhToZhadhbb_narrow_M-800_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-800.xml
+ZprimeToZhToZhadhbb_narrow_M-1000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-1000.xml
+ZprimeToZhToZhadhbb_narrow_M-1200_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-1200.xml
+ZprimeToZhToZhadhbb_narrow_M-1400_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-1400.xml
+ZprimeToZhToZhadhbb_narrow_M-1600_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-1600.xml
+ZprimeToZhToZhadhbb_narrow_M-1800_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-1800.xml
+ZprimeToZhToZhadhbb_narrow_M-2000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-2000.xml
+ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-2500.xml
+ZprimeToZhToZhadhbb_narrow_M-3000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-3000.xml
+ZprimeToZhToZhadhbb_narrow_M-3500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-3500.xml
+ZprimeToZhToZhadhbb_narrow_M-4000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-4000.xml
+ZprimeToZhToZhadhbb_narrow_M-4500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-4500.xml
+ZprimeToZhToZhadhbb_narrow_M-5000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-5000.xml
+ZprimeToZhToZhadhbb_narrow_M-5500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-5500.xml
+ZprimeToZhToZhadhbb_narrow_M-6000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-6000.xml
+ZprimeToZhToZhadhbb_narrow_M-6500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-6500.xml
+ZprimeToZhToZhadhbb_narrow_M-7000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-7000.xml
+ZprimeToZhToZhadhbb_narrow_M-7500_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-7500.xml
+ZprimeToZhToZhadhbb_narrow_M-8000_13TeV-madgraph new_deepAK8-V2_samples_xml/2017/ZprimeZH/ZprimeToZhToZhadhbb_M-8000.xml

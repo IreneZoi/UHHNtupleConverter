@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JobConfiguration PUBLIC "" "JobConfig.dtd">
+<JobConfiguration JobName="ExampleCycleJob" OutputLevel="INFO">
+    <Library Name="libSUHH2UHHNtupleConverter"/>
+    <Package Name="SUHH2UHHNtupleConverter.par" />
+   <Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="./" PostFix="" TargetLumi="1" >        
+        <InputData Lumi="1" NEventsMax="-1" Type="MC" Version="2017v2" Cacheable="False">
+            <InputTree Name="AnalysisTree" /> 
+            <OutputTree Name="AnalysisTree" />	    
+        </InputData>            
+        <UserConfig>
+            <Item Name="PrimaryVertexCollection" Value="offlineSlimmedPrimaryVertices" /> 
+            <Item Name="ElectronCollection" Value="slimmedElectronsUSER" />
+            <Item Name="MuonCollection" Value="slimmedMuonsUSER" /> 
+            <Item Name="JetCollection" Value="jetsAk8CHS" />
+	    <Item Name="TopJetCollection" Value="jetsAk8PuppiSubstructure_SoftDropPuppi"/>
+            <Item Name="GenJetCollection" Value="slimmedGenJetsAK8" />
+            <Item Name="GenTopJetCollection" Value="genjetsAk8SubstructureSoftDrop" />
+            <Item Name="METName" Value="slimmedMETsPuppi" />
+            <Item Name="GenParticleCollection" Value="GenParticles" />
+            <Item Name="additionalBranches" Value="jetsAk4Puppi slimmedGenJets" /> <!-- additional jet collection for VBF jets -->
+            <Item Name="AnalysisModule" Value="UHHNtupleConverterModule" /> 
+            <Item Name="use_sframe_weight" Value="false" />            
+            <Item Name="pileup_directory" Value="Pileup_QCD_PtBinned/MyMCPileupHistogram_QCD_Pt_1400to1800_2017v2.root" />
+            <Item Name="pileup_directory_data" Value="../common/data/2017/MyDataPileupHistogram2017.root" />
+	    <Item Name="sample_name" Value="ZprimeToZhToZhadhbb_narrow_M-2000_13TeV-madgraph" />
+	    <Item Name="jet_sorting" Value="random" /> <!--options: btag,random !-->	    	    
+            <Item Name="TestKey" Value="TestKeyValue" />
+        </UserConfig>
+    </Cycle>
+</JobConfiguration>

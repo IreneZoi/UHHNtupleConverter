@@ -74,6 +74,7 @@ if options.check_jobs:
  ndirs = 0
  resubmit_jobs = []
  for d in os.listdir('./'):
+  if not 'VBF' in options.sample and 'VBF' in d: continue 
   if options.sample in d:
    print d
    ndirs+=1
@@ -95,6 +96,7 @@ if options.check_jobs:
  nfiles = 0
  for d in os.listdir(options.outdir):
   if not options.sample in d: continue
+  if not 'VBF' in options.sample and 'VBF' in d: continue 
   for f in os.listdir(options.outdir+"/"+d):
    if '.root' in f: nfiles+=1
  print "Found",ndirs,"directories and",nfiles,"files!" 
@@ -135,6 +137,7 @@ for l in f_samples.readlines():
 
  sample_name = l.split(' ')[0]
  if sample_name.find(options.sample) == -1 or '#' in sample_name: continue
+ if not 'VBF' in options.sample and 'VBF' in sample_name: continue
  
  folder = l.split(' ')[1].replace('\n','')
  if not sample_name in samples.keys():
@@ -147,7 +150,6 @@ for l in f_samples.readlines():
   samples[sample_name].append(folder)
   
 f_samples.close()
-#print samples
 
 print "--------------------------------------------------------"
 nevents = {}

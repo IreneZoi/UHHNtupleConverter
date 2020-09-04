@@ -20,6 +20,9 @@ sample = options.indir.split('/')[-1]
 i = 1
 for d in os.listdir('./'):
  if not sample in d: continue
+ if not 'VBF' in sample and 'VBF' in d: continue
+ #jobid = int(d.split('-')[-1])
+ #if jobid <= 287: continue
  i+=1
  found = False
  for f in os.listdir(d):
@@ -39,10 +42,15 @@ for d in os.listdir('./'):
   print "The job output file not found for directory",d
   sys.exit()
 
+print totalEvents,totalGenEvents
+
 hadd_cmd = 'hadd -f %s '%(options.outdir+"/"+options.outfile)
 
 nfiles = len(os.listdir(options.indir))
 for i,f in enumerate(os.listdir(options.indir)):
+ #jobid = int(f.split('-')[-1].replace('.root',''))
+ #if jobid <= 287: continue
+ #print f
  if i%50 == 0: print "File",i+1,"of",nfiles
  tf = ROOT.TFile.Open(options.indir+"/"+f)
  tree = tf.AnalysisTree
