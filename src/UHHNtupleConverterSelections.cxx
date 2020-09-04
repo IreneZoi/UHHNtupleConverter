@@ -231,7 +231,7 @@ bool VBFjetSelection::passes(const Event & event){
   const auto & jet1 = vbfjets.at(1);
   auto deta = fabs(jet0.eta() - jet1.eta());
   if(deta < deta_min) return false;
-  if(jet0.eta() * jet1.eta() > 0) return false;
+  //if(jet0.eta() * jet1.eta() > 0) return false;
   if(inv_mass_safe(jet0.v4()+jet1.v4()) < mjj_min ) return false;
   return true;
 }
