@@ -20,3 +20,4 @@ JECDatabase/*
 pydump.py
 Makefile.local
 config/UHHNtupleConverterLocal.xml
+!NLOweights/*.root
