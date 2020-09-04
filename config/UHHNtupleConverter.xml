@@ -9,9 +9,10 @@
    <Cycle Name="uhh2::AnalysisModuleRunner" OutputDirectory="./" PostFix="" TargetLumi="1" >
    <!-- <Cycle Name="uhh2::AnalysisModuleRunner"  RunMode="PROOF" ProofServer="lite://"  ProofWorkDir="/nfs/dust/cms/user/ottjoc/proof-wd/" ProofNodes="2" OutputDirectory="./" PostFix="" TargetLumi="1" >  -->
         
-        <InputData Lumi="1" NEventsMax="-1" Type="MC" Version="ZprimeToZhToZhadhbb_narrow_M-2500_2016v2" Cacheable="False">
+        <InputData Lumi="1" NEventsMax="1000" Type="MC" Version="VBF_ZprimeToWW_2018" Cacheable="False">
             <!--In FileName="root://dcache-cms-xrootd.desy.de:1094/pnfs/desy.de/cms/tier2/store/user/akaravdi/RunII_102X_v1_TEST/QCD_Pt-15to7000_TuneCP5_Flat_13TeV_pythia8/crab_QCD_Pt-15to7000_TuneCP5_Flat_13TeV_pythia8_ext1/190305_174908/0000/Ntuple_98.root" Lumi="1.0" /-->
-            <In FileName="root://dcache-cms-xrootd.desy.de:1094/pnfs/desy.de/cms/tier2//store/user/abenecke/RunII_102X_v1/VH_Zprime/ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/crab_ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/190409_063535/0000/Ntuple_1.root" Lumi="1.0" />
+<!--            <In FileName="root://dcache-cms-xrootd.desy.de:1094/pnfs/desy.de/cms/tier2//store/user/abenecke/RunII_102X_v1/VH_Zprime/ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/crab_ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/190409_063535/0000/Ntuple_1.root" Lumi="1.0" />-->
+            <In FileName="/pnfs/desy.de/cms/tier2/store/user/izoi/RunII_102X_v1/2018//VBF_ZprimeToWW_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph/crab_VBF_ZprimeToWW_narrow_M-1200_TuneCP5_PSweights_13TeV-madgraph/190418_181524/0000/Ntuple_1.root" Lumi="1.0" />
             <!--In FileName="root://dcache-cms-xrootd.desy.de:1094/pnfs/desy.de/cms/tier2//store/user/abenecke/RunII_102X_v1/VH_Zprime/ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/crab_ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/190409_063535/0000/Ntuple_2.root" Lumi="1.0" />
             <In FileName="root://dcache-cms-xrootd.desy.de:1094/pnfs/desy.de/cms/tier2//store/user/abenecke/RunII_102X_v1/VH_Zprime/ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/crab_ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/190409_063535/0000/Ntuple_3.root" Lumi="1.0" />
             <In FileName="root://dcache-cms-xrootd.desy.de:1094/pnfs/desy.de/cms/tier2//store/user/abenecke/RunII_102X_v1/VH_Zprime/ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/crab_ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph/190409_063535/0000/Ntuple_4.root" Lumi="1.0" />
@@ -72,12 +73,12 @@
             <Item Name="use_sframe_weight" Value="false" />
             
             <!-- configuration for MCPileupReweight (run as part of CommonModules): -->
-            <Item Name="pileup_directory" Value="../common/data/2016/MyMCPileupHistogram.root" />
-            <Item Name="pileup_directory_data" Value="../common/data/2016/MyDataPileupHistogram.root" />
+            <Item Name="pileup_directory" Value="../common/data/2018/MyMCPileupHistogram.root" />
+            <Item Name="pileup_directory_data" Value="../common/data/2018/MyDataPileupHistogram2018.root" />
 	    
             <!-- Some useful variables -->
             <!--Item Name="sample_name" Value="QCD_Pt-15to7000_TuneCP5_Flat_13TeV_pythia8_ext1" /-->
-	    <Item Name="sample_name" Value="ZprimeToZhToZhadhbb_narrow_M-2500_13TeV-madgraph" />
+	    <Item Name="sample_name" Value="VBF_ZprimeToWW" />
 	    <Item Name="jet_sorting" Value="random" /> <!--options: btag,random !-->
 	    	    
             <!-- Some test configuration; see UHHNtupleConverterModule.cxx for how to access it: -->
